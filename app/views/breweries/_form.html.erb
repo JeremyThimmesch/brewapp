@@ -1,0 +1,88 @@
+<%= form_for @brewery, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :description, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :description, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :city, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :city, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :address, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :address, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :hours, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :hours, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :name, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :name, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :monday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :monday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :tuesday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :tuesday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :wednesday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :wednesday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :thursday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :thursday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :friday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :friday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :saturday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :saturday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :sunday, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :sunday, :class => 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :neighborhood, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :neighborhood, :class => 'text_field form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  breweries_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+<% end %>

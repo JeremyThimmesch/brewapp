@@ -1,0 +1,68 @@
+<center>
+
+<%- model_class = Brewery -%>
+<div class="page-header">
+  <h1>Minnesota Tap Rooms</h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <!--<th><%= model_class.human_attribute_name(:id) %></th>-->
+      <!--<th><%= model_class.human_attribute_name(:description) %></th>-->
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:city) %></th>
+      <!--<th><%= model_class.human_attribute_name(:address) %></th>-->
+      <!--<th><%= model_class.human_attribute_name(:hours) %></th>-->
+      <th><%= model_class.human_attribute_name(:monday) %></th>
+      <th><%= model_class.human_attribute_name(:tuesday) %></th>
+      <th><%= model_class.human_attribute_name(:wednesday) %></th>
+      <th><%= model_class.human_attribute_name(:thursday) %></th>
+      <th><%= model_class.human_attribute_name(:friday) %></th>
+      <th><%= model_class.human_attribute_name(:saturday) %></th>
+      <th><%= model_class.human_attribute_name(:sunday) %></th>
+      <!--<th><%= model_class.human_attribute_name(:neighborhood) %></th>-->
+      <!--<th><%= model_class.human_attribute_name(:created_at) %></th>-->
+      <!--<th><%=t '.actions', :default => t("helpers.actions") %></th>-->
+    </tr>
+  </thead>
+  <tbody>
+    <% @breweries.each do |brewery| %>
+      <tr>
+        <!--<td><%= brewery.id %></td>-->
+          <!--<td><%= brewery.description %></td>-->
+          <td><%= brewery.name %></td>
+          <td><%= brewery.city %></td>
+          <!--<td><%= brewery.address %></td>->
+          <!--<td><%= brewery.hours %></td>-->
+          <td><%= brewery.monday %></td>
+          <td><%= brewery.tuesday %></td>
+          <td><%= brewery.wednesday %></td>
+          <td><%= brewery.thursday %></td>
+          <td><%= brewery.friday %></td>
+          <td><%= brewery.saturday %></td>
+          <td><%= brewery.sunday %></td>
+          <!--<td><%= brewery.neighborhood %></td>-->
+        <!--<td><%=l brewery.created_at, format: :long %></td>-->
+        <!--<td>
+          <%= link_to brewery_path(brewery), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+            <%= glyph 'info-sign' %>
+          <%- end -%>
+          <%= link_to edit_brewery_path(brewery), :class => 'btn btn-xs', :title => "#{ t('.edit', :default => t('helpers.links.edit')) }" do %>
+            <%= glyph 'pencil' %>
+          <%- end -%>
+          <%= link_to brewery_path(brewery), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+            <%= glyph 'remove' %>-->
+          <%- end -%>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</center>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_brewery_path,
+            :class => 'btn btn-primary' %>
+
+
