@@ -39,4 +39,5 @@ gem 'bootstrap-sass'
  gem 'bootstrap-sass-extras'
  gem 'autoprefixer-rails'
  gem 'bootswatch-rails'
+ gem 'rails_12factor', group: :production
 
